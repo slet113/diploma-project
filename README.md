@@ -32,4 +32,9 @@
   * _для использования базы данных mySQL -_ ./gradlew clean test "-Ddb.url=jdbc:mysql://localhost:3306/app"
   * _для использования базы данных postgreSQL -_ ./gradlew clean test "-Ddb.url=jdbc:postgresql://localhost:5432/app"
 
+## Документация
+1. План написания автоматизированных тестов https://github.com/slet113/diploma-project/blob/main/docs/Plan.md
+2. Отчёт о проведённом тестировании https://github.com/slet113/diploma-project/blob/main/docs/Report.md
+3. Отчёт о проведённой автоматизации https://github.com/slet113/diploma-project/blob/main/docs/Summary.md
+
 
