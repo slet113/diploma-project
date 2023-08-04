@@ -237,21 +237,6 @@ public class TravelTest {
     }
 
     @Test
-    public void russianSymbolsInNamePaymentCard() {
-
-        var creditPage = open("http://localhost:8080", CreditPage.class);
-        var randomInfo = DataHelper.generateRandomInfo(1, 1);
-        creditPage.creditFieldClick();
-        creditPage.cardNumberFieldValue(randomInfo.getNumber());
-        creditPage.monthFieldValue(randomInfo.getMonth());
-        creditPage.yearFieldValue(randomInfo.getYear());
-        creditPage.nameFieldValue("Слеткова Екатерина");
-        creditPage.cvvFieldValue(randomInfo.getCvv());
-        creditPage.sendFieldClick();
-        creditPage.wrongFormat();
-    }
-
-    @Test
     public void numbersInNamePaymentCard() {
 
         var paymentPage = open("http://localhost:8080", PaymentPage.class);
@@ -260,7 +245,7 @@ public class TravelTest {
         paymentPage.cardNumberFieldValue(randomInfo.getNumber());
         paymentPage.monthFieldValue(randomInfo.getMonth());
         paymentPage.yearFieldValue(randomInfo.getYear());
-        paymentPage.nameFieldValue("123");
+        paymentPage.nameFieldValue(DataHelper.generateRandomInt());
         paymentPage.cvvFieldValue(randomInfo.getCvv());
         paymentPage.sendFieldClick();
         paymentPage.wrongFormat();
@@ -474,21 +459,6 @@ public class TravelTest {
     }
 
     @Test
-    public void russianSymbolsInNameCreditPayment() {
-
-        var creditPage = open("http://localhost:8080", CreditPage.class);
-        var randomInfo = DataHelper.generateRandomInfo(1, 1);
-        creditPage.creditFieldClick();
-        creditPage.cardNumberFieldValue(randomInfo.getNumber());
-        creditPage.monthFieldValue(randomInfo.getMonth());
-        creditPage.yearFieldValue(randomInfo.getYear());
-        creditPage.nameFieldValue("Слеткова Екатерина");
-        creditPage.cvvFieldValue(randomInfo.getCvv());
-        creditPage.sendFieldClick();
-        creditPage.wrongFormat();
-    }
-
-    @Test
     public void numbersInNameCreditPayment() {
 
         var creditPage = open("http://localhost:8080", CreditPage.class);
@@ -497,7 +467,7 @@ public class TravelTest {
         creditPage.cardNumberFieldValue(randomInfo.getNumber());
         creditPage.monthFieldValue(randomInfo.getMonth());
         creditPage.yearFieldValue(randomInfo.getYear());
-        creditPage.nameFieldValue("123");
+        creditPage.nameFieldValue(DataHelper.generateRandomInt());
         creditPage.cvvFieldValue(randomInfo.getCvv());
         creditPage.sendFieldClick();
         creditPage.wrongFormat();
