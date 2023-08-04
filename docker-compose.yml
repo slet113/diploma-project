@@ -2,6 +2,7 @@ version: '3.7'
 services:
   mysqldb:
     image: mysql:8.0.31
+    restart: always
     ports:
       - '3306:3306'
     environment:
