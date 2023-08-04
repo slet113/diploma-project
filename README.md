@@ -19,13 +19,17 @@
 Программы необходимые для запуска проекта на ПК:
 1. Браузер (Google Chrome, Яндекс и другие)
 2. Intellij Idea
-3. Git
-4. Docker
+3. Docker
 
 ## Установка и запуск
-1. Открыть проект в Intellij Idea (см. Начало работы)
-2. Открыть Docker. Для 
+1. Запустить Docker;
+2. Открыть проект в Intellij Idea (см. Начало работы);
+3. В терминале запустить контейнера при помощи команды docker-compose up --build;
+4. Запустить в терминале сервис командой:
+  * _для базы данных mySQL -_ java "-Dspring.datasource.url=jdbc:mysql://localhost:3306/app" -jar artifacts/aqa-shop.jar
+  * _для базы данных postgreSQL -_ java "-Dspring.datasource.url=jdbc:postgresql://localhost:5432/app" -jar artifacts/aqa-shop.jar
+5. Запустить в терминале тесты командой:
+  * _для использования базы данных mySQL -_ ./gradlew clean test "-Ddb.url=jdbc:mysql://localhost:3306/app"
+  * _для использования базы данных postgreSQL -_ ./gradlew clean test "-Ddb.url=jdbc:postgresql://localhost:5432/app"
 
-
-## Лицензия
 
