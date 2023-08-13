@@ -21,7 +21,6 @@ public class DataHelper {
     }
 
     public static CardInfo getDeclinedCardData() {
-
         return new CardInfo("4444 4444 4444 4442", "DECLINED");
     }
 
@@ -49,9 +48,13 @@ public class DataHelper {
         return new RandomInfo(generateRandomNumber(), generateRandomMonth(plusMonth), generateRandomYear(plusYear), generateRandomName(), generateRandomCvv());
     }
 
-    public static String generateRandomInt() {
-        return faker.numerify("##");
-    }
+    public static String generateRandomInt() {return faker.numerify("##");}
+
+    public static String generateRandomNumberCard() { return faker.numerify("#### #### #### ###");}
+
+    public static String generateRandomNumberMin() { return faker.numerify("#");}
+
+    public static String generateRandomLetter() { return faker.letterify("?");}
 
 
     @Value
