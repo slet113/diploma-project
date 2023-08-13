@@ -36,3 +36,10 @@
 12. Во вкладке "КУПИТЬ В КРЕДИТ" поле "CVC/CVV" оставить пустым
 13. Во вкладке "КУПИТЬ" ввод в поле "CVC/CVV" значение 000
 14. Во вкладке "КУПИТЬ В КРЕДИТ" ввод в поле "CVC/CVV" значение 000
+
+### Скриншоты Allure
+![репорт](https://github.com/slet113/diploma-project/assets/114664885/49f22c68-18fa-4e6f-ab9e-cd54576eeefc)
+
+![репорт 2](https://github.com/slet113/diploma-project/assets/114664885/c7fb6960-d034-4a1c-8e27-da3dd4b579fe)
+
+
